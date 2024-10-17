@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('file:///D:/well_predictor/r.jpg'); /* Replace with the actual path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* You can change the font-family */
+        }
+
+        h1 {
+            color: #fff; /* Set text color to white */
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #00cc00, #006600); /* Green gradient theme */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green color for the submit button */
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <title>Smart Well Prediction</title>
+</head>
+<body>
+    <h1>AI Enabled Well</h1>
+
+    <form action="/predict" method="post">
+        <label for="depth">Enter depth for drilling (in meters): </label>
+        <input type="text" id="depth" name="depth" required>
+        <br>
+
+        <!-- Add input fields for other features -->
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

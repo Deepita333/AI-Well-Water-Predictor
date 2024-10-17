@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Smart Well Prediction - Results</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark text color */
+        }
+
+        h2 {
+            color: #006600; /* Dark green for the heading */
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        /* Apply a light green background to odd paragraphs for better readability */
+        p:nth-child(odd) {
+            background-color: #e0ffe0; /* Light green background for odd paragraphs */
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        /* Apply a slightly darker green background to even paragraphs for better contrast */
+        p:nth-child(even) {
+            background-color: #c0f0c0; /* Slightly darker green background for even paragraphs */
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Results:</h2>
+    <p>Predicted Depth of Drilling: {{ depth }}</p>
+    <p>Predicted Yield: {{ yield_val }}</p>
+    <p>Predicted Drilling Method: {{ drilling_method }}</p>
+</body>
+</html>
